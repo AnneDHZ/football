@@ -13,14 +13,14 @@ class Joueur{
 // méthodes
 // fonction constructeur
 
-public function __construct(string $nom, string $prenom, string $dateNaissance, Pays $nomPays){
-    $this->nom = $nom;
-    $this->prenom = $prenom;
-    $this->dateNaissance = new DateTime($dateNaissance);
-    $this->nomPays =$nomPays;
-    $nomPays->addJoueur($this);
-    $this->contrats =[];
-}
+    public function __construct(string $nom, string $prenom, string $dateNaissance, Pays $nomPays){
+        $this->nom = $nom;
+        $this->prenom = $prenom;
+        $this->dateNaissance = new DateTime($dateNaissance);
+        $this->nomPays =$nomPays;
+        $nomPays->addJoueur($this);
+        $this->contrats =[];
+    }
 
 // getter et setter
 
@@ -104,6 +104,7 @@ public function __construct(string $nom, string $prenom, string $dateNaissance, 
     public function calculerAge(){
         $aujourdhui = new DateTime();
         $age = $aujourdhui->diff($this->getDateNaissance())->y;
+        
         return $age." ans <br>";
     }
 

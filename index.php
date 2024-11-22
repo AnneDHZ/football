@@ -164,6 +164,7 @@ $contrat39 = new Contrat("2020", $lyon, $aruna);
 // var_dump($contrat38);
 // var_dump($contrat39);
 
+//afficher les équipes par pays
 // echo $france-> afficherEquipe();
 // echo $espagne-> afficherEquipe();
 // echo $urugay-> afficherEquipe();
@@ -172,6 +173,7 @@ $contrat39 = new Contrat("2020", $lyon, $aruna);
 // echo $coteIvoire-> afficherEquipe();
 // echo $argentine-> afficherEquipe();
 
+// afficher les joueurs par pays
 // echo $france-> afficherJoueur();
 // echo $espagne-> afficherJoueur();
 // echo $urugay-> afficherJoueur();
@@ -180,13 +182,6 @@ $contrat39 = new Contrat("2020", $lyon, $aruna);
 // echo $coteIvoire-> afficherJoueur();
 // echo $argentine-> afficherJoueur();
 
-// echo $france-> afficherJoueur();
-// echo $espagne-> afficherJoueur();
-// echo $urugay-> afficherJoueur();
-// echo $angleterre-> afficherJoueur();
-// echo $italie-> afficherJoueur();
-// echo $coteIvoire-> afficherJoueur();
-// echo $argentine-> afficherJoueur();
 
 // afficher l'age des joueurs
 // echo $vairelles -> getAge();
@@ -209,12 +204,12 @@ $contrat39 = new Contrat("2020", $lyon, $aruna);
 // echo $maakee->afficherContrat();
 
 // afficher les joueurs de chaque équipe
-echo $lens->afficherJoueur();
-echo $strasbourg->afficherJoueur();
-echo $lyon->afficherJoueur();
-echo $barcelone->afficherJoueur();
-echo $madrid->afficherJoueur();
-echo $liverpool->afficherJoueur();
-echo $bristol->afficherJoueur();
-echo $monopoli->afficherJoueur();
-echo $francavilla->afficherJoueur();
+// echo $lens->afficherJoueur();
+// echo $strasbourg->afficherJoueur();
+// echo $lyon->afficherJoueur();
+// echo $barcelone->afficherJoueur();
+// echo $madrid->afficherJoueur();
+// echo $liverpool->afficherJoueur();
+// echo $bristol->afficherJoueur();
+// echo $monopoli->afficherJoueur();
+// echo $francavilla->afficherJoueur();

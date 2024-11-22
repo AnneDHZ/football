@@ -3,18 +3,18 @@
 class Equipe{
 
 // attributs
-private string $nomEquipe;
-private Pays $nomPays;
-private array $contrats=[];
+    private string $nomEquipe;
+    private Pays $nomPays;
+    private array $contrats=[];
 
 // méthodes 
 // fonction construct
-public function __construct(string $nomEquipe, Pays $nomPays){
-    $this->nomEquipe = $nomEquipe;
-    $this->nomPays = $nomPays;
-    $nomPays->addEquipe($this);
-    $this->contrats =[];
-}
+    public function __construct(string $nomEquipe, Pays $nomPays){
+        $this->nomEquipe = $nomEquipe;
+        $this->nomPays = $nomPays;
+        $nomPays->addEquipe($this);
+        $this->contrats =[];
+    }
 
 // getter et setter
 

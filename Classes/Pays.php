@@ -77,7 +77,7 @@ Class Pays{
     }
 
        // fonction afficherJoueur
-       public function afficherJoueur(){
+    public function afficherJoueur(){
         $result= $this ."<br>";
 
         foreach ($this->joueurs as $joueur){
