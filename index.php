@@ -30,6 +30,7 @@ $bristol = new Equipe("Bristol Rovers", $angleterre);
 $monopoli = new Equipe("SSC Monopoli", $italie);
 $francavilla = new Equipe("Virtus Francavilla", $italie);
 
+
 // joueurs  nom, prenom, date de naissance, pays
 $vairelles = new Joueur("Vairelles", "Tony", "1973", $france);
 $boli = new Joueur("Boli", "Roger", "1965", $france);
@@ -47,7 +48,6 @@ $maakee = new Joueur("Maakee", "Lino", "2005", $italie);
 
 
 // contrats  année, équipe, joueur
-// ! c'est à la date du jour, pas l'année demandée... 
 $contrat1 = new Contrat("2005", $lens, $vairelles);
 $contrat2 = new Contrat("2012", $lens, $boli);
 $contrat3 = new Contrat("2013", $lens, $aruna);
@@ -164,4 +164,57 @@ $contrat39 = new Contrat("2020", $lyon, $aruna);
 // var_dump($contrat38);
 // var_dump($contrat39);
 
-$france= afficherEquipe($this);
+// echo $france-> afficherEquipe();
+// echo $espagne-> afficherEquipe();
+// echo $urugay-> afficherEquipe();
+// echo $angleterre-> afficherEquipe();
+// echo $italie-> afficherEquipe();
+// echo $coteIvoire-> afficherEquipe();
+// echo $argentine-> afficherEquipe();
+
+// echo $france-> afficherJoueur();
+// echo $espagne-> afficherJoueur();
+// echo $urugay-> afficherJoueur();
+// echo $angleterre-> afficherJoueur();
+// echo $italie-> afficherJoueur();
+// echo $coteIvoire-> afficherJoueur();
+// echo $argentine-> afficherJoueur();
+
+// echo $france-> afficherJoueur();
+// echo $espagne-> afficherJoueur();
+// echo $urugay-> afficherJoueur();
+// echo $angleterre-> afficherJoueur();
+// echo $italie-> afficherJoueur();
+// echo $coteIvoire-> afficherJoueur();
+// echo $argentine-> afficherJoueur();
+
+// afficher l'age des joueurs
+// echo $vairelles -> getAge();
+
+
+
+// pour afficher les contrats d'un joueur
+// echo $vairelles->afficherContrat();
+// echo $boli->afficherContrat();
+// echo $aruna->afficherContrat();
+// echo $pajis->afficherContrat();
+// echo $keller->afficherContrat();
+// echo $lacazette->afficherContrat();
+// echo $messi->afficherContrat();
+// echo $beckham->afficherContrat();
+// echo $gerard->afficherContrat();
+// echo $suarez->afficherContrat();
+// echo $sinclair->afficherContrat();
+// echo $vasquez->afficherContrat();
+// echo $maakee->afficherContrat();
+
+// afficher les joueurs de chaque équipe
+echo $lens->afficherJoueur();
+echo $strasbourg->afficherJoueur();
+echo $lyon->afficherJoueur();
+echo $barcelone->afficherJoueur();
+echo $madrid->afficherJoueur();
+echo $liverpool->afficherJoueur();
+echo $bristol->afficherJoueur();
+echo $monopoli->afficherJoueur();
+echo $francavilla->afficherJoueur();

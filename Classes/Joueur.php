@@ -90,9 +90,32 @@ public function __construct(string $nom, string $prenom, string $dateNaissance, 
         $this->contrats []= $contrat;
     }
 
-// fonction 
+   // fonction afficher Contrats du joueur
+   public function afficherContrat(){
+        $result= $this->getInfos() ."<br>";
 
-// fonction
+        foreach ($this->contrats as $contrat){
+            $result.= $contrat."<br>";
+        }
+        return $result;
+    }
+
+// fonction calculer age
+    public function calculerAge(){
+        $aujourdhui = new DateTime();
+        $age = $aujourdhui->diff($this->getDateNaissance())->y;
+        return $age." ans <br>";
+    }
+
+// fonction afficher age
+    public function getAge(){
+        return $this ." a " . $this->calculerAge() ."<br>";
+    }
+
+// fonction getInfos
+    public function getInfos(){
+        return $this ."<br>". $this-> getNomPays()." - " .$this->calculerAge();
+    }
 
 
     // fonction __toString

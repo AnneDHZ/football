@@ -66,6 +66,25 @@ Class Pays{
         $this->equipes []= $equipe;
     }
 
+    //  fonction afficher équipes
+    public function afficherEquipe(){
+        $result= $this ."<br>";
+
+        foreach ($this->equipes as $equipe){
+            $result.= $equipe."<br>";
+        }
+        return $result;
+    }
+
+       // fonction afficherJoueur
+       public function afficherJoueur(){
+        $result= $this ."<br>";
+
+        foreach ($this->joueurs as $joueur){
+            $result.= $joueur."<br>";
+        }
+        return $result;
+    }
 
 // fonction toString
  

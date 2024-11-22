@@ -54,13 +54,26 @@ public function __construct(string $nomEquipe, Pays $nomPays){
         return $this;
     }
 
-//   fonction 
+
+ 
     
     // fonction ajouter contrat
     public function addcontrat(Contrat $contrat){
         $this->contrats []= $contrat;
     }
     
+    // afficher joueurs de chaque equipe
+    public function afficherJoueur(){
+        $result= $this ."<br>";
+
+        foreach ($this->contrats as $contrat){
+            $result.= $contrat->afficherJoueurContrat()."<br>";
+        }
+        return $result;
+    }
+
+
+
 // fonction toString
     public function __toString(){
         return $this->getNomEquipe();
